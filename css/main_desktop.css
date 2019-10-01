@@ -1,0 +1,51 @@
+/* ************************************
+   *********** MEDIA QUERIES **********
+   ************************************ */
+
+#header_mobile {
+  display: none;
+}
+
+#header_desktop {
+  display: block;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #101010;
+}
+
+#header_desktop ul {
+  display: flex;
+}
+
+#header_desktop li {
+  margin: 0 calc(1rem + 2vw);
+  padding: .2rem .3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+#header_desktop li:hover {
+  color: rgb(251, 188, 1);
+}
+
+#name {
+  margin: calc(25vh - 3rem) 0 1.5rem 0;
+  font-size: 6rem;
+  letter-spacing: .3rem;
+}
+
+#job {
+  font-size: 2rem;
+  background: rgba(65, 159, 202, 0.5);
+}
+
+#icons {
+  padding-left: 1rem;
+}
+
+#icons > a:hover {
+  color: rgb(251, 188, 1);
+}
