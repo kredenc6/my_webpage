@@ -1,0 +1,41 @@
+#header_mobile {
+  display: none;
+}
+
+#header_desktop {
+  display: flex;
+}
+
+#heading {
+  margin: calc(15vh - 3rem) 0 1.5rem 0;
+  font-size: 6rem;
+  letter-spacing: .3rem;
+}
+
+#introduction {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background: rgba(65, 159, 202, 0.5);
+}
+
+.yellow {
+  color: rgb(251, 188, 1);
+}
+
+#info {
+  margin: 4vh 3vw;
+  /* margin-top: 2rem; */
+  display: flex;
+}
+
+  #info p {
+    width: 50%;
+    margin-top: 1rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  #info p::first-line {
+    text-indent: 1rem;
+  }

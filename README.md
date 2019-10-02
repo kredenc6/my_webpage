@@ -1,1 +1,1 @@
-This is my official website, where I present my frontend portfolio.
+This is my official website, where I present my learned skills.

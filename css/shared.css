@@ -1,11 +1,4 @@
-html {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  cursor: default;
-}
-
 body {
-  min-height: 100vh;
   background: linear-gradient(
     rgba(56, 148, 190, 0.75),
     rgba(56, 148, 190, 0.75)
@@ -13,16 +6,6 @@ body {
    url(../img/stanley-dai-73OZYNjVoNI-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-header {
-  text-transform: uppercase;
-  font-weight: 300;
-  color: rgb(240, 240, 240);
-}
-
-main {
-  margin: 0 4vw;
 }
 
 .vertical {
@@ -54,9 +37,3 @@ main {
   margin: 0 1rem;
   transition: all .3s;
 }
-
-
-
-/* ************************************
-   ************* DEBUGING *************
-   ************************************ */

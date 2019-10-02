@@ -1,0 +1,52 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  background: linear-gradient(
+    rgba(56, 148, 190, 1),
+    rgba(56, 148, 190, 1)
+   );
+}
+
+header {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: rgb(240, 240, 240);
+}
+
+#header_desktop {
+  height: calc(2rem + 5vh);
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #101010;
+}
+
+  #header_desktop ul {
+    display: flex;
+  }
+
+  #header_desktop li {
+    margin: 0 calc(1rem + 2vw);
+    padding: .2rem .3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+    #header_desktop li:hover {
+      color: rgb(251, 188, 1);
+    }
+
+#header_mobile {
+  height: 1vh;
+}
+
+main {
+  margin: 0 4vw;
+  }
