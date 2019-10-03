@@ -1,0 +1,28 @@
+#mobile_menu {
+  display: none;
+}
+
+#introduction {
+  padding: 1rem 2rem;
+  background: rgba(65, 159, 202, 0.5);
+}
+
+img {
+  border-radius: 20%;
+  box-shadow: 4px 4px 8px rgb(40, 40, 40);
+}
+
+#info {
+  display: flex;
+}
+
+  #info p {
+    margin-top: 1rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+    #info p::first-line {
+      text-indent: 1rem;
+    }

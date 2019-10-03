@@ -7,10 +7,12 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/mcleod-reset.css">
   <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./css/shared.css">
   <!-- MEDIA QUERIES -->
   <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
   <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktop.css" />
   <title>Filip Srankota</title>
+  <script src="https://kit.fontawesome.com/408ebf63a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- HEADERS -->
@@ -19,24 +21,25 @@
       <ul>
         <li><a href="../index.html">HOME</a></li>
         <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="../concat/concat.html">CONTACT</a></li>
+        <li><a href="../contact/contact.html">CONTACT</a></li>
         <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
       </ul>
     </nav>
   </header>
   <header id="header_mobile">
     <div id="menu_icon_container">
-      <i class="fas fa-bars"></i>
+      <i id="menu_icon" class="fas fa-bars"></i>
     </div>
-    <nav>
+    <!-- MOBILE NAVIGATION -->
+    <nav id="mobile_menu">
       <ul>
         <li><a href="../index.html">HOME</a></li>
         <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="../concat/concat.html">CONTACT</a></li>
+        <li><a href="../contact/contact.html">CONTACT</a></li>
         <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
       </ul>
     </nav>
-  </header>
+</header>
     <!-- MAIN CONTENT -->
   <main>
     <section id="heading">
@@ -48,13 +51,33 @@
     <section id="introduction">
       <h3>
         <span class="yellow">Allow me</span>
-        to start by...
+        to start&nbsp;by...
       </h3>
     </section>
     <section id="info">
-        <img src="../img/my_picture.jpg" width="250px" height="250px" alt="nice picture of me">
-      <p>...introducing myself. My name is Filip Šrankota. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ratione dolor iste necessitatibus modi voluptate tempore odio natus dolores saepe, eos doloremque expedita, est harum vitae tenetur similique cum qui.</p>
+      <img src="../img/my_picture.jpg" width="250px" height="250px" alt="nice picture of me">
+      <p>...introducing myself. My name is Filip Šrankota.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus minima facilis tempore, impedit porro esse velit beatae! Impedit eos rerum a inventore quia commodi corporis, reprehenderit repudiandae veniam pariatur!</p>
     </section>
   </main>
+  <script>
+    document.getElementById("menu_icon").addEventListener("click",toggleMobileMenu);
+    const mobileMenuNode = document.getElementById("mobile_menu");
+    const menuIconContainerNode = document.getElementById("menu_icon_container");
+
+    let menuVisible = false;
+    function toggleMobileMenu() {
+      if(menuVisible) {
+        mobileMenuNode.style.display = "none";
+        menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+        menuVisible = false;
+      }
+      else {
+        mobileMenuNode.style.display = "block";
+        menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        menuVisible = true;
+      }
+    }
+  </script>
 </body>
 </html>

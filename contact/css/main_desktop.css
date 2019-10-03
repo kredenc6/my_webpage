@@ -16,10 +16,11 @@
   font-size: 2rem;
 }
 
-#info {
+#form {
   margin: 8vh 3vw 0 3vw;
 }
 
-  #info p {
-    width: 50%;
-  }
+#loading_message {
+  top: 60%;
+  font-size: 2rem;
+}

@@ -21,7 +21,7 @@
       <ul>
         <li><a href="./index.html">HOME</a></li>
         <li><a href="./about/about.html">ABOUT</a></li>
-        <li><a href="./concat/concat.html">CONTACT</a></li>
+        <li><a href="./contact/contact.html">CONTACT</a></li>
         <li><a href="./portfolio/portfolio.html">PORTFOLIO</a></li>
       </ul>
     </nav>
@@ -35,7 +35,7 @@
       <ul>
         <li><a href="./index.html">HOME</a></li>
         <li><a href="./about/about.html">ABOUT</a></li>
-        <li><a href="../concat/concat.html">CONTACT</a></li>
+        <li><a href="../contact/contact.html">CONTACT</a></li>
         <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
       </ul>
     </nav>
@@ -56,22 +56,24 @@
     </section>
     <section id="icons">
       <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/kredenc6" target:"_blank"><i class="fab fa-github"></i></a>
     </section>
   </main>
   <script>
     document.getElementById("menu_icon").addEventListener("click",toggleMobileMenu);
     const mobileMenuNode = document.getElementById("mobile_menu");
-    const mobileHeaderNode = document.getElementById("header_mobile");
+    const menuIconContainerNode = document.getElementById("menu_icon_container");
 
     let menuVisible = false;
     function toggleMobileMenu() {
       if(menuVisible) {
         mobileMenuNode.style.display = "none";
+        menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         menuVisible = false;
       }
       else {
         mobileMenuNode.style.display = "block";
+        menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0)";
         menuVisible = true;
       }
     }

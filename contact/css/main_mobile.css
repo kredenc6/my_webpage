@@ -1,0 +1,60 @@
+#header_desktop {
+  display: none;
+}
+
+#header_mobile {
+  display: block;
+}
+
+main {
+  min-height: 85vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin: 5vh 0;
+}
+
+#heading {
+  margin: calc(1.5rem + 8vh) 0 0 0;
+  font-size: 3.1rem;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+#introduction {
+  width: 80%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#form {
+  width: 100vw;
+}
+
+#loading_message {
+  top: 65%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.lds-spinner {
+  top: 0.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+  .lds-spinner div {
+    transform-origin: 32px 1.2rem;
+  }
+
+    .lds-spinner div:after {
+      width: 3px;
+      height: 8px;
+    }

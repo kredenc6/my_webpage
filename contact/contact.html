@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
+  <link rel="stylesheet" href="../../css/mcleod-reset.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/spinner.css">
+  <!-- MEDIA QUERIES -->
+  <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
+  <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktop.css" />
+  <title>Filip Srankota</title>
+  <script src="https://kit.fontawesome.com/408ebf63a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header_desktop">
+        <nav>
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../about/about.html">ABOUT</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <header id="header_mobile">
+        <div id="menu_icon_container">
+          <i id="menu_icon" class="fas fa-bars"></i>
+        </div>
+        <!-- MOBILE NAVIGATION -->
+        <nav id="mobile_menu">
+          <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../about/about.html">ABOUT</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+              <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+          </ul>
+        </nav>
+    </header>
+        <!-- MAIN CONTENT -->
+      <main>
+        <section id="heading">
+          <h1>
+            Contact
+            <span class="yellow"> Me</span>
+          </h1>
+        </section>
+        <section id="introduction">
+          <h3>
+            <span class="yellow">Let's</span>
+            start working together
+          </h3>
+        </section>
+        <section id="form">
+          <span id="loading_message"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>&nbsp;&nbsp;&nbsp;&nbsp;loading google form…</span>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDVIp0Oj43ZTvPcQz9VJxvdOdU63ff3Dz_mNDbj9M7AsO0Hg/viewform?embedded=true"
+            height="830" frameborder="0" marginheight="0" marginwidth="0" onload="hideLoadingMessage()">
+          </iframe>
+        </section>
+      </main>
+</body>
+<script>
+  document.getElementById("menu_icon").addEventListener("click",toggleMobileMenu);
+  const mobileMenuNode = document.getElementById("mobile_menu");
+  const menuIconContainerNode = document.getElementById("menu_icon_container");
+
+  let menuVisible = false;
+  function toggleMobileMenu() {
+    if(menuVisible) {
+      mobileMenuNode.style.display = "none";
+      menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+      menuVisible = false;
+    }
+    else {
+      mobileMenuNode.style.display = "block";
+      menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0)";
+      menuVisible = true;
+    }
+  }
+
+  function hideLoadingMessage() {
+    document.getElementById("loading_message").style.display = "none";
+  }
+</script>
+</html>
