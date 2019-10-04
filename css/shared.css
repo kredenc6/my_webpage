@@ -1,9 +1,10 @@
 body {
-  background: linear-gradient(
-    rgba(56, 148, 190, 0.75),
-    rgba(56, 148, 190, 0.75)
-   ),
-   url(../img/stanley-dai-73OZYNjVoNI-unsplash.jpg);
+  background: 
+    linear-gradient(
+      rgba(56, 148, 190, 0.75),
+      rgba(56, 148, 190, 0.75)
+    ),
+    url(../img/stanley-dai.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }

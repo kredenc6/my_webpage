@@ -1,0 +1,68 @@
+#introduction {
+  padding: 1rem 2rem;
+  background: rgba(65, 159, 202, 0.5);
+}
+
+#portfolio {
+  display: flex;
+}
+
+.project {
+  width: 28%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+    .project > a:first-child {
+      width: 100%;
+    }
+
+  .project figure {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    border: 3px solid rgb(240, 240, 240);
+    overflow: hidden;
+  }
+  
+    .project figure img {
+      width: 100%;
+      height: auto;
+      opacity: 0.8;
+      transform: scale(1.1);
+      transition: all .5s;
+    }
+
+      .project figure img:hover {
+        opacity: 1;
+        transform: scale(1);
+        cursor: pointer;
+      }
+
+.live_version,
+.view_code {
+  width: 100%;
+  margin-top: .5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  transition: all .2s;
+}
+
+.live_version:hover,
+.view_code:hover {
+  background-color: rgb(251, 188, 1);
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+}
+
+.live_version {
+  background-color: rgb(240, 240, 240);
+  color: rgb(20, 20, 20);
+}
+
+.view_code {
+  background-color: rgb(20, 20, 20);
+  color: rgb(240, 240, 240);
+}

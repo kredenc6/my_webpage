@@ -1,0 +1,35 @@
+#header_mobile {
+  display: none;
+}
+
+#header_desktop {
+  display: flex;
+}
+
+#heading {
+  margin: calc(15vh - 3rem) 0 1vh 0;
+  font-size: 6rem;
+  letter-spacing: .3rem;
+}
+
+#introduction {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+#portfolio {
+  
+  margin-top: 3rem;
+}
+
+ #portfolio > article {
+   margin: 0 1rem;
+ }
+
+  #portfolio > article:first-child {
+    margin-left: 0;
+  }
+
+  #portfolio > article:last-child {
+    margin-right: 0;
+  }

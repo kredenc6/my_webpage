@@ -33,28 +33,3 @@ section {
   font-size: 1.5rem;
   text-align: center;
 }
-
-#form {
-  width: 100vw;
-}
-
-#loading_message {
-  top: 70vh;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.lds-spinner {
-  top: 0.6rem;
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-  .lds-spinner div {
-    transform-origin: 32px 1.2rem;
-  }
-
-    .lds-spinner div:after {
-      width: 3px;
-      height: 8px;
-    }

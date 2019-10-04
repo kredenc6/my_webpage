@@ -20,54 +20,69 @@
 <body>
   <!-- HEADERS -->
   <header id="header_desktop">
-    <nav>
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="../contact/contact.html">CONTACT</a></li>
-        <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about/about.html">ABOUT</a></li>
+          <li><a href="../contact/contact.html">CONTACT</a></li>
+          <li><a href="./portfolio.html">PORTFOLIO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header id="header_mobile">
+      <div id="menu_icon_container">
+        <i id="menu_icon" class="fas fa-bars"></i>
+      </div>
+      <!-- MOBILE NAVIGATION -->
+      <nav id="mobile_menu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../about/about.html">ABOUT</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+        </ul>
+      </nav>
   </header>
-  <header id="header_mobile">
-    <div id="menu_icon_container">
-      <i id="menu_icon" class="fas fa-bars"></i>
-    </div>
-    <!-- MOBILE NAVIGATION -->
-    <nav id="mobile_menu">
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="../contact/contact.html">CONTACT</a></li>
-        <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
-      </ul>
-    </nav>
-</header>
-    <!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
   <main>
     <section id="heading">
       <h1>
-        Info about
-        <span class="yellow"> Me</span>
+        <span class="yellow">My</span>
+        Projects
       </h1>
     </section>
     <section id="introduction">
       <h3>
-        <span class="yellow">Allow me</span>
-        to start&nbsp;by...
+        Feel free to take a
+        <span class="yellow">look</span>
       </h3>
     </section>
-    <section id="info">
-      <img src="../img/my_picture.jpg" width="250px" height="250px" alt="nice picture of me">
-      <p>...introducing myself. My name is Filip Šrankota.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus minima facilis tempore, impedit porro esse velit beatae! Impedit eos rerum a inventore quia commodi corporis, reprehenderit repudiandae veniam pariatur!</p>
+    <section id="portfolio">
+      <article id="pexeso" class="project">
+        <a href="#">
+          <figure>
+            <img src="../img/pex1res.jpg" alt="pexeso">
+          </figure>
+        </a>
+        <a href="#" class="live_version"><i class="fas fa-eye"></i> Live Version</a>
+        <a href="https://www.github.com/kredenc6/Pexeso" class="view_code"><i class="fab fa-github"></i> View Code</a>
+      </article>
+      <article id="calculator" class="project">
+        <a href="#">
+          <figure>
+            <img src="http://placekitten.com/350/220" alt="calculator">
+          </figure>
+        </a>
+        <a class="live_version"><i class="fas fa-eye"></i> Live Version</a>
+        <a class="view_code"><i class="fab fa-github"></i> View Code</a>
+      </article>
     </section>
   </main>
   <script>
     document.getElementById("menu_icon").addEventListener("click",toggleMobileMenu);
     const mobileMenuNode = document.getElementById("mobile_menu");
     const menuIconContainerNode = document.getElementById("menu_icon_container");
-
+  
     let menuVisible = false;
     function toggleMobileMenu() {
       if(menuVisible) {

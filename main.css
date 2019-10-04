@@ -27,7 +27,8 @@ header {
   height: calc(2rem + 5vh);
   justify-content: flex-end;
   align-items: center;
-  background-color: rgb(20, 20, 20);;
+  background-color: rgb(20, 20, 20);
+  z-index: 1;
 }
 
   #header_desktop ul {
