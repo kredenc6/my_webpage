@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="../../css/mcleod-reset.css">
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./css/shared.css">
   <!-- MEDIA QUERIES -->
   <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
@@ -80,24 +80,6 @@
       </article>
     </section>
   </main>
-  <script>
-    document.getElementById("menu_icon").addEventListener("click", toggleMobileMenu);
-    const mobileMenuNode = document.getElementById("mobile_menu");
-    const menuIconContainerNode = document.getElementById("menu_icon_container");
-  
-    let menuVisible = false;
-    function toggleMobileMenu() {
-      if(menuVisible) {
-        mobileMenuNode.style.display = "none";
-        menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-        menuVisible = false;
-      }
-      else {
-        mobileMenuNode.style.display = "block";
-        menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0)";
-        menuVisible = true;
-      }
-    }
-  </script>
+  <script src="../main.js"></script>
 </body>
 </html>

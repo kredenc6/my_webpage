@@ -22,4 +22,6 @@
 
   #info p {
     width: 50%;
+    max-width: 40rem;
+    min-width: 28rem;
   }

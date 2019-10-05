@@ -27,9 +27,7 @@ section {
 
 #introduction {
   width: 80%;
-  max-width: 300px;
-  display: flex;
-  justify-content: center;
+  max-width: 19rem;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -37,6 +35,10 @@ section {
 #form {
   width: 100vw;
 }
+
+  #form iframe {
+    object-position: center;
+  }
 
 #loading_message {
   top: 70vh;

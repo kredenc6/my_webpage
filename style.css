@@ -7,8 +7,6 @@ html {
 
 body {
   min-height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
   background: linear-gradient(
     rgba(56, 148, 190, 1),
     rgba(56, 148, 190, 1)

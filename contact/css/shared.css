@@ -3,9 +3,9 @@
   background: rgba(65, 159, 202, 0.5);
 }
 
- #form iframe{
-    width: 100%;
-    object-position: 50% 50%;
+  #form iframe {
+    width: 640px;
+    max-width: 100%;
     object-fit: cover;
   }
 

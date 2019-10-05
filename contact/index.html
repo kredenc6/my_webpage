@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="../../css/mcleod-reset.css">
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./css/shared.css">
   <link rel="stylesheet" href="./css/spinner.css">
   <!-- MEDIA QUERIES -->
@@ -24,9 +24,9 @@
       <nav>
         <ul>
           <li><a href="../index.html">HOME</a></li>
-          <li><a href="../about/about.html">ABOUT</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
-          <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+          <li><a href="../about/index.html">ABOUT</a></li>
+          <li><a href="./index.html">CONTACT</a></li>
+          <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
         </ul>
       </nav>
     </header>
@@ -38,9 +38,9 @@
       <nav id="mobile_menu">
         <ul>
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="../about/about.html">ABOUT</a></li>
-            <li><a href="./contact.html">CONTACT</a></li>
-            <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+            <li><a href="../about/index.html">ABOUT</a></li>
+            <li><a href="./index.html">CONTACT</a></li>
+            <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
         </ul>
       </nav>
   </header>
@@ -59,34 +59,12 @@
         </h3>
       </section>
       <section id="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDVIp0Oj43ZTvPcQz9VJxvdOdU63ff3Dz_mNDbj9M7AsO0Hg/viewform?embedded=true"
-          height="830" frameborder="0" marginheight="0" marginwidth="0" onload="hideLoadingMessage()">
-        </iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDVIp0Oj43ZTvPcQz9VJxvdOdU63ff3Dz_mNDbj9M7AsO0Hg/viewform?embedded=true"
+            height="1000" frameborder="0" marginheight="0" marginwidth="0" onload="hideLoadingMessage()">
+          </iframe>
       </section>
     </main>
     <span id="loading_message"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>loading google form…</span>
 </body>
-<script>
-  document.getElementById("menu_icon").addEventListener("click",toggleMobileMenu);
-  const mobileMenuNode = document.getElementById("mobile_menu");
-  const menuIconContainerNode = document.getElementById("menu_icon_container");
-
-  let menuVisible = false;
-  function toggleMobileMenu() {
-    if(menuVisible) {
-      mobileMenuNode.style.display = "none";
-      menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-      menuVisible = false;
-    }
-    else {
-      mobileMenuNode.style.display = "block";
-      menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0)";
-      menuVisible = true;
-    }
-  }
-
-  function hideLoadingMessage() {
-    document.getElementById("loading_message").style.display = "none";
-  }
-</script>
+<script src="../main.js"></script>
 </html>

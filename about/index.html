@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="../../css/mcleod-reset.css">
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./css/shared.css">
   <!-- MEDIA QUERIES -->
   <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
@@ -23,9 +23,9 @@
     <nav>
       <ul>
         <li><a href="../index.html">HOME</a></li>
-        <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="../contact/contact.html">CONTACT</a></li>
-        <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+        <li><a href="./index.html">ABOUT</a></li>
+        <li><a href="../contact/index.html">CONTACT</a></li>
+        <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
       </ul>
     </nav>
   </header>
@@ -37,9 +37,9 @@
     <nav id="mobile_menu">
       <ul>
         <li><a href="../index.html">HOME</a></li>
-        <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="../contact/contact.html">CONTACT</a></li>
-        <li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+        <li><a href="./index.html">ABOUT</a></li>
+        <li><a href="../contact/index.html">CONTACT</a></li>
+        <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
       </ul>
     </nav>
 </header>
@@ -59,28 +59,13 @@
     </section>
     <section id="info">
       <img src="../img/my_picture.jpg" width="250px" height="250px" alt="nice picture of me">
-      <p>...introducing myself. My name is Filip Šrankota.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus minima facilis tempore, impedit porro esse velit beatae! Impedit eos rerum a inventore quia commodi corporis, reprehenderit repudiandae veniam pariatur!</p>
+      <p>...introducing myself. My name is Filip&nbsp;Šrankota.<br>
+        I'm a self-tought web developer based near Prague. My main focus has mostly been on front-end web development.
+        Some of my skills are demonstrated on this site and in the portfolio tab. They include HTML, CSS, 
+        JavaScript and ReactJS.
+      </p>
     </section>
   </main>
-  <script>
-    document.getElementById("menu_icon").addEventListener("click",toggleMobileMenu);
-    const mobileMenuNode = document.getElementById("mobile_menu");
-    const menuIconContainerNode = document.getElementById("menu_icon_container");
-
-    let menuVisible = false;
-    function toggleMobileMenu() {
-      if(menuVisible) {
-        mobileMenuNode.style.display = "none";
-        menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-        menuVisible = false;
-      }
-      else {
-        mobileMenuNode.style.display = "block";
-        menuIconContainerNode.style.backgroundColor = "rgba(0, 0, 0, 0)";
-        menuVisible = true;
-      }
-    }
-  </script>
+  <script src="../main.js"></script>
 </body>
 </html>
