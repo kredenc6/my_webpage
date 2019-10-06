@@ -15,6 +15,7 @@
   <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
   <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktop.css" />
   <!-- ICONS -->
+  <link rel="icon" type="image/png" href="../img/favicon.ico">
   <script src="https://kit.fontawesome.com/408ebf63a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -31,7 +32,8 @@
   </header>
   <header id="header_mobile">
     <div id="menu_icon_container">
-      <i id="menu_icon" class="fas fa-bars"></i>
+        <svg id="menu_icon"><use xlink:href="#menu"></use></svg>
+        <svg id="close_icon"><use xlink:href="#close"></use></svg>
     </div>
     <!-- MOBILE NAVIGATION -->
     <nav id="mobile_menu">
@@ -58,14 +60,32 @@
       </h3>
     </section>
     <section id="info">
-      <img src="../img/my_picture.jpg" width="250px" height="250px" alt="nice picture of me">
-      <p>...introducing myself. My name is Filip&nbsp;Šrankota.<br>
-        I'm a self-tought web developer based near Prague. My main focus has mostly been on front-end web development.
-        Some of my skills are demonstrated on this site and in the portfolio tab. They include HTML, CSS, 
-        JavaScript and ReactJS.
-      </p>
+      <div id="info1">
+        <img src="../img/my_picture.jpg" width="250px" height="250px" alt="nice picture of me">
+        <p>...introducing myself. My name is Filip&nbsp;Šrankota.<br>
+          I'm a self-tought web developer based near Prague. My main focus has mostly been on front-end web development.
+          Some of my skills are demonstrated on this site and in the portfolio page. They include HTML, CSS, 
+          JavaScript and ReactJS.
+        </p>
+      </div>
+      <div id="info2">
+        <p>I'm looking for a job position&nbsp;- junior web developer to keep growing my skills and applying those I've already learned.</p>
+        <p>If you are interested in working with me or want more information about my work, I would love to hear from you! 
+          You can contact me by filling out the form on the contact page.
+        </p>
+      </div>
     </section>
   </main>
-  <script src="../main.js"></script>
 </body>
+<!-- SVG -->
+<svg version="1.1" xlmns="http://www.w3.org/2000/svg" style="display: none">
+  <symbol id="menu" viewbox="0 0 100 100">
+    <path d="m93.542 16.071h-87.083c-2.1771 0-3.9583-3.0536-3.9583-6.7857 0-3.7321 1.7812-6.7857 3.9583-6.7857h87.083c2.1771 0 3.9583 3.0536 3.9583 6.7857 0 3.7321-1.7812 6.7857-3.9583 6.7857zm0 40.714h-87.083c-2.1771 0-3.9583-3.0536-3.9583-6.7857s1.7812-6.7857 3.9583-6.7857h87.083c2.1771 0 3.9583 3.0536 3.9583 6.7857s-1.7812 6.7857-3.9583 6.7857zm0 40.714h-87.083c-2.1771 0-3.9583-3.0536-3.9583-6.7857s1.7812-6.7857 3.9583-6.7857h87.083c2.1771 0 3.9583 3.0536 3.9583 6.7857s-1.7812 6.7857-3.9583 6.7857z"/>
+  </symbol>
+  <symbol id="close" viewbox="0 0 100 100">
+    <path d="m97.5 11.999-9.4994-9.4994-38.001 38.001-38.001-38.001-9.4994 9.4994 38.001 38.001-38.001 38.001 9.4994 9.4994 38.001-38.001 38.001 38.001 9.4994-9.4994-38.001-38.001z"/>
+  </symbol>
+</svg>
+<!-- SCRIPTS -->
+<script src="../main.js"></script>
 </html>

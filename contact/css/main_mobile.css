@@ -6,6 +6,10 @@
   display: block;
 }
 
+    #header_mobile li:nth-child(3) {
+      border-top: 1px solid rgb(251, 188, 1);
+    }
+
 main {
   min-height: 85vh;
   display: flex;

@@ -40,9 +40,10 @@ header {
     cursor: pointer;
     transition: all .3s;
   }
-
-    #header_desktop li:hover {
-      color: rgb(251, 188, 1);
+  
+  #header_desktop li:hover {
+    color: rgb(251, 188, 1);
+    border-bottom: 1px solid rgb(251, 188, 1);
     }
 
 #header_mobile {
@@ -51,7 +52,8 @@ header {
 
 main {
   margin: 0 4vw;
-  }
+  border: 2px solid pink;
+}
 
 .yellow {
   color: rgb(251, 188, 1);
@@ -64,13 +66,13 @@ main {
   justify-content: flex-end;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-#menu_icon {
-  padding: .5rem;
-  font-size: 2rem;
   cursor: pointer;
 }
+
+#menu_icon_container svg {
+  padding: .6rem;
+  font-size: 0.8rem;
+  }
 
 #mobile_menu {
   display: none;
@@ -96,5 +98,5 @@ main {
   #mobile_menu li {
     padding-top: 1rem;
     font-size: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(240, 240, 240, 0.2);
   }

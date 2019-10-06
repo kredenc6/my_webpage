@@ -15,6 +15,7 @@
   <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
   <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktop.css" />
   <!-- ICONS -->
+  <link rel="icon" type="image/png" href="../img/favicon.ico">
   <script src="https://kit.fontawesome.com/408ebf63a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -31,7 +32,8 @@
     </header>
     <header id="header_mobile">
       <div id="menu_icon_container">
-        <i id="menu_icon" class="fas fa-bars"></i>
+          <svg id="menu_icon"><use xlink:href="#menu"></use></svg>
+          <svg id="close_icon" class="invisible"><use xlink:href="#close"></use></svg>
       </div>
       <!-- MOBILE NAVIGATION -->
       <nav id="mobile_menu">
@@ -53,8 +55,8 @@
     </section>
     <section id="introduction">
       <h3>
-        Feel free to take a
-        <span class="yellow">look</span>
+        Feel free to take
+        <span class="yellow">a look</span>
       </h3>
     </section>
     <section id="portfolio">
@@ -80,6 +82,16 @@
       </article>
     </section>
   </main>
-  <script src="../main.js"></script>
 </body>
+<!-- SVG -->
+<svg version="1.1" xlmns="http://www.w3.org/2000/svg" style="display: none">
+  <symbol id="menu" viewbox="0 0 100 100">
+    <path d="m93.542 16.071h-87.083c-2.1771 0-3.9583-3.0536-3.9583-6.7857 0-3.7321 1.7812-6.7857 3.9583-6.7857h87.083c2.1771 0 3.9583 3.0536 3.9583 6.7857 0 3.7321-1.7812 6.7857-3.9583 6.7857zm0 40.714h-87.083c-2.1771 0-3.9583-3.0536-3.9583-6.7857s1.7812-6.7857 3.9583-6.7857h87.083c2.1771 0 3.9583 3.0536 3.9583 6.7857s-1.7812 6.7857-3.9583 6.7857zm0 40.714h-87.083c-2.1771 0-3.9583-3.0536-3.9583-6.7857s1.7812-6.7857 3.9583-6.7857h87.083c2.1771 0 3.9583 3.0536 3.9583 6.7857s-1.7812 6.7857-3.9583 6.7857z"/>
+  </symbol>
+  <symbol id="close" viewbox="0 0 100 100">
+    <path d="m97.5 11.999-9.4994-9.4994-38.001 38.001-38.001-38.001-9.4994 9.4994 38.001 38.001-38.001 38.001 9.4994 9.4994 38.001-38.001 38.001 38.001 9.4994-9.4994-38.001-38.001z"/>
+  </symbol>
+</svg>
+<!-- SCRIPTS -->
+<script src="../main.js"></script>
 </html>

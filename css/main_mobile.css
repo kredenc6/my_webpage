@@ -2,6 +2,10 @@
   display: none;
 }
 
+    #header_mobile li:nth-child(1) {
+      border-top: 1px solid rgb(251, 188, 1);
+    }
+
 main {
   min-height: 85vh;
   display: flex;
@@ -23,7 +27,5 @@ section {
 #job {
   width: 80%;
   max-width: 300px;
-  display: flex;
-  justify-content: center;
   font-size: 1.5rem;
 }
