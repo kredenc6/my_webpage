@@ -1,0 +1,66 @@
+#header_desktop {
+  display: none;
+}
+
+#header_mobile {
+  display: block;
+}
+
+    #header_mobile li:nth-child(3) {
+      border-top: 1px solid rgb(251, 188, 1);
+    }
+
+main {
+  min-height: 85vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin: 5vh 0;
+}
+
+#heading {
+  margin: calc(1.5rem + 8vh) 0 0 0;
+  font-size: 3.1rem;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+#introduction {
+  width: 80%;
+  max-width: 19rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#form {
+  width: 100vw;
+}
+
+  #form iframe {
+    object-position: center;
+  }
+
+#loading_message {
+  top: 70vh;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.lds-spinner {
+  top: 0.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+  .lds-spinner div {
+    transform-origin: 32px 1.2rem;
+  }
+
+    .lds-spinner div:after {
+      width: 3px;
+      height: 8px;
+    }

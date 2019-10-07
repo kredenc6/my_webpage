@@ -1,0 +1,41 @@
+body {
+  background: 
+    linear-gradient(
+      rgba(56, 148, 190, 0.75),
+      rgba(56, 148, 190, 0.75)
+    ),
+    url(../img/stanley-dai.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vertical {
+  display: inline-block;
+  writing-mode: vertical-lr;
+  color: rgb(251, 188, 1);
+}
+
+#name-vert {
+  transform: rotate(180deg) translate(10%, -1%);
+}
+
+#job {
+  margin-top: 1vh;
+  padding: 0 1rem 0.4rem 1rem;
+  background: rgba(65, 159, 202, 0.5);
+}
+
+#job-vert {
+  transform: rotate(180deg) translate(-15%, 0);
+}
+
+#icons {
+  margin-top: 3vh;
+  font-size: 1.5rem;
+  color: rgb(240, 240, 240);
+}
+
+#icons > a {
+  margin: 0 1rem;
+  transition: all .3s;
+}

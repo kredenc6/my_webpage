@@ -1,0 +1,35 @@
+#header_desktop {
+  display: none;
+}
+
+    #header_mobile li:nth-child(1) {
+      border-top: 1px solid rgb(251, 188, 1);
+    }
+
+main {
+  min-height: 85vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin: 5vh 0;
+}
+
+#name {
+  margin-top: calc(1.5rem + 5vh);
+  font-size: 3.1rem;
+  letter-spacing: .2rem;
+}
+
+#job {
+  width: 80%;
+  max-width: 300px;
+  font-size: 1.5rem;
+}
+
+#icons {
+  font-size: 1.2rem;
+}
