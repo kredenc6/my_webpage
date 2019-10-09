@@ -1,3 +1,14 @@
+body {
+  background: 
+    linear-gradient(
+      rgba(56, 148, 190, 0.75),
+      rgba(56, 148, 190, 0.75)
+    ),
+    url(../../img/code.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #introduction {
   padding: 1rem 2rem;
   background: rgba(65, 159, 202, 0.5);
@@ -6,6 +17,12 @@
 #portfolio {
   display: flex;
   flex-flow: row wrap;
+}
+
+.portfolio_icon {
+  margin-right: 1rem;
+  font-size: .7rem;
+  vertical-align: sub;
 }
 
 .project {
