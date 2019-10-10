@@ -1,3 +1,16 @@
+body {
+  background: 
+    linear-gradient(
+      rgba(56, 148, 190, 0.9),
+      rgba(56, 148, 190, 0.9)
+    ),
+    url(../../img/maranda_vandergr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 #mobile_menu {
   display: none;
 }

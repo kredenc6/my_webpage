@@ -29,14 +29,14 @@
   margin-top: 3rem;
 }
 
- #portfolio > article {
+ .project {
    margin: 0 1rem;
  }
 
-  #portfolio > article:first-child {
-    margin-left: 0;
+  .project:first-child {
+      margin-left: 0;
   }
 
-  #portfolio > article:last-child {
+  .project:last-child {
     margin-right: 0;
   }

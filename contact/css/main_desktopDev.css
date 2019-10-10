@@ -25,9 +25,7 @@
 }
 
 #form {
-  display: flex;
-  justify-content: center;
-  margin: 8vh 3vw 0 3vw;
+  margin-top: 8vh;
 }
 
 #loading_message {

@@ -10,7 +10,7 @@
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="../css/mcleod-reset.css">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="./css/sharedDev.css">
+  <link rel="stylesheet" href="./css/shared.css">
   <!-- MEDIA QUERIES -->
   <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
   <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktop.css" />
@@ -39,8 +39,8 @@
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="../about/index.html">ABOUT</a></li>
-            <li><a href="./index.html">CONTACT</a></li>
-            <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
+            <li><a href="../contact/index.html">CONTACT</a></li>
+            <li><a href="./index.html">PORTFOLIO</a></li>
         </ul>
       </nav>
   </header>
@@ -60,11 +60,9 @@
     </section>
     <section id="portfolio">
       <article id="pexeso" class="project">
-        <a href="#">
-          <figure>
-            <img src="../img/pex1res.jpg" alt="pexeso">
-          </figure>
-        </a>
+        <div class="project_img_container">
+          <a href="#"></a>
+        </div>
         <a href="https://infallible-lichterman-a94e0f.netlify.com/" class="live_version">
           <svg class="portfolio_icon"><use xlink:href="#eye"></use></svg>Live Version
         </a>
@@ -73,11 +71,9 @@
         </a>
       </article>
       <article id="calculator" class="project">
-        <a href="#">
-          <figure>
-            <img src="../img/calcres.jpg" alt="calculator">
-          </figure>
-        </a>
+          <div class="project_img_container">
+            <a href="#"></a>
+          </div>
         <a href="https://sad-meitner-4bcac4.netlify.com/" class="live_version">
           <svg class="portfolio_icon"><use xlink:href="#eye"></use></svg>Live Version
         </a>
@@ -106,4 +102,18 @@
 </svg>
 <!-- SCRIPTS -->
 <script src="../main.js"></script>
+<script>
+  window.addEventListener("load", resizeProject);
+  window.addEventListener("resize", resizeProject);
+
+  function resizeProject() {
+    const projectNodes = document.getElementsByClassName("project");
+    const projectWidth = window.getComputedStyle(projectNodes[0]).width;
+    const widthNumber = Math.round(projectWidth.slice(0, -2));
+
+    for(let picture of document.getElementsByClassName("project_img_container")) {
+      picture.style.height = `${Math.round(widthNumber / 1.6)}px`;
+    }
+  }
+</script>
 </html>

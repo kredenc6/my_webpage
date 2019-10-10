@@ -4,9 +4,11 @@ body {
       rgba(56, 148, 190, 0.75),
       rgba(56, 148, 190, 0.75)
     ),
-    url(../img/stanley-dai.jpg);
+    url(../img/alesia_kazantceva.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .vertical {
