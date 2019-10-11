@@ -24,7 +24,7 @@ section {
 
 #heading {
   margin: calc(1.5rem + 8vh) 0 0 0;
-  font-size: 3.1rem;
+  font-size: calc(2vw + 2rem);
   letter-spacing: .2rem;
   text-align: center;
 }
@@ -32,7 +32,7 @@ section {
 #introduction {
   width: 80%;
   max-width: 300px;
-  font-size: 1.5rem;
+  font-size: calc(2vw + 1rem);
   text-align: center;
 }
 
@@ -44,7 +44,7 @@ section {
   #info p {
     margin-top: 2.5rem;
     padding: 0 5vw;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
   }
 
