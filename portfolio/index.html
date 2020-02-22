@@ -18,44 +18,63 @@
   <link rel="icon" type="image/png" href="../img/favicon.ico">
 </head>
 <body>
+  <!-- FB SCRIPT -->
+  <div id="fb-root"></div>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=1981051258695498"
+  >
+  </script>
   <!-- HEADERS -->
   <header id="header_desktop">
-      <nav>
-        <ul>
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="../about/index.html">ABOUT</a></li>
-          <li><a href="../contact/index.html">CONTACT</a></li>
-          <li><a href="./index.html">PORTFOLIO</a></li>
-        </ul>
-      </nav>
-    </header>
-    <header id="header_mobile">
-      <div id="menu_icon_container">
-          <svg id="menu_icon"><use xlink:href="#menu"></use></svg>
-          <svg id="close_icon" class="invisible"><use xlink:href="#close"></use></svg>
-      </div>
-      <!-- MOBILE NAVIGATION -->
-      <nav id="mobile_menu">
-        <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../about/index.html">ABOUT</a></li>
-            <li><a href="../contact/index.html">CONTACT</a></li>
-            <li><a href="./index.html">PORTFOLIO</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li><a href="../index.html"></a></li>
+        <li><a href="../about/index.html"></a></li>
+        <li><a href="../contact/index.html"></a></li>
+        <li><a href="./index.html"></a></li>
+      </ul>
+    </nav>
+    <div class="language">
+      <button class="language_en">en</button>
+      /
+      <button class="language_cz">cz</button>
+    </div>
+  </header>
+  <header id="header_mobile">
+    <div id="menu_icon_container">
+        <svg id="menu_icon"><use xlink:href="#menu"></use></svg>
+        <svg id="close_icon" class="invisible"><use xlink:href="#close"></use></svg>
+    </div>
+    <!-- MOBILE NAVIGATION -->
+    <nav id="mobile_menu">
+      <ul>
+          <li><a href="../index.html"></a></li>
+          <li><a href="../about/index.html"></a></li>
+          <li><a href="../contact/index.html"></a></li>
+          <li><a href="./index.html"></a></li>
+      </ul>
+    </nav>
+    <div class="language">
+      <button class="language_en">en</button>
+      /
+      <button class="language_cz">cz</button>
+    </div>
   </header>
   <!-- MAIN CONTENT -->
   <main>
     <section id="heading">
       <h1>
-        <span class="yellow">My</span>
-        Projects
+        <span class="heading yellow"></span>
+        <span class="heading"></span>
       </h1>
     </section>
     <section id="introduction">
       <h3>
-        Feel free to take
-        <span class="yellow">a&nbsp;look</span>
+        <span class="subheading"></span>
+        <span class="subheading yellow"></span>
       </h3>
     </section>
     <section id="portfolio">
@@ -64,10 +83,12 @@
           <a href="#"></a>
         </div>
         <a href="https://infallible-lichterman-a94e0f.netlify.com/" class="live_version">
-          <svg class="portfolio_icon"><use xlink:href="#eye"></use></svg>Live Version
+          <svg class="portfolio_icon"><use xlink:href="#eye"></use></svg>
+          <span class="liveViewText"></span>
         </a>
         <a href="https://www.github.com/kredenc6/Pexeso" class="view_code">
-          <svg class="portfolio_icon"><use xlink:href="#github"></use></svg>View Code
+          <svg class="portfolio_icon"><use xlink:href="#github"></use></svg>
+          <span class="viewCodeText"></span>
         </a>
       </article>
       <article id="calculator" class="project">
@@ -75,14 +96,29 @@
             <a href="#"></a>
           </div>
         <a href="https://sad-meitner-4bcac4.netlify.com/" class="live_version">
-          <svg class="portfolio_icon"><use xlink:href="#eye"></use></svg>Live Version
+          <svg class="portfolio_icon"><use xlink:href="#eye"></use></svg>
+          <span class="liveViewText"></span>
         </a>
         <a href="https://github.com/kredenc6/calculator" class="view_code">
-          <svg class="portfolio_icon"><use xlink:href="#github"></use></svg>View Code
+          <svg class="portfolio_icon"><use xlink:href="#github"></use></svg>
+          <span class="viewCodeText"></span>
         </a>
       </article>
     </section>
   </main>
+  <footer>
+    © 2020 All Rights Reserved
+    <div
+      class="fb-like"
+      data-href="https://vibrant-gates-1be236.netlify.com/index.html"
+      data-width=""
+      data-layout="button"
+      data-action="like"
+      data-size="small"
+      data-share="true"
+    >
+    </div>
+  </footer>
 </body>
 <!-- SVG -->
 <svg version="1.1" xlmns="http://www.w3.org/2000/svg" style="display: none">
@@ -101,7 +137,7 @@
   </symbol>
 </svg>
 <!-- SCRIPTS -->
-<script src="../main.js"></script>
+<script type="module" src="../main.js"></script>
 <script>
   window.addEventListener("load", resizeProject);
   window.addEventListener("resize", resizeProject);

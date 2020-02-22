@@ -13,21 +13,35 @@
   <link rel="stylesheet" href="./css/shared.css">
   <!-- MEDIA QUERIES -->
   <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
-  <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktop.css" />
+  <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktopDev.css" />
   <!-- ICONS -->
   <link rel="icon" type="image/png" href="./img/favicon.ico">
 </head>
 <body>
+  <!-- FB SCRIPT -->
+  <div id="fb-root"></div>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=1981051258695498"
+  >
+  </script>
   <!-- HEADERS -->
   <header id="header_desktop">
     <nav>
       <ul>
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./about/index.html">ABOUT</a></li>
-        <li><a href="./contact/index.html">CONTACT</a></li>
-        <li><a href="./portfolio/index.html">PORTFOLIO</a></li>
+        <li><a href="./index.html"></a></li>
+        <li><a href="./about/index.html"></a></li>
+        <li><a href="./contact/index.html"></a></li>
+        <li><a href="./portfolio/index.html"></a></li>
       </ul>
     </nav>
+    <div class="language">
+      <button class="language_en">en</button>
+      /
+      <button class="language_cz">cz</button>
+    </div>
   </header>
   <header id="header_mobile">
     <div id="menu_icon_container">
@@ -37,25 +51,30 @@
     <!-- MOBILE NAVIGATION -->
     <nav id="mobile_menu">
       <ul>
-        <li><a href="./index.html">HOME</a></li>
-        <li><a href="./about/index.html">ABOUT</a></li>
-        <li><a href="../contact/index.html">CONTACT</a></li>
-        <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
+        <li><a href="./index.html"></a></li>
+        <li><a href="./about/index.html"></a></li>
+        <li><a href="./contact/index.html"></a></li>
+        <li><a href="./portfolio/index.html"></a></li>
       </ul>
     </nav>
+    <div class="language">
+      <button class="language_en">en</button>
+      /
+      <button class="language_cz">cz</button>
+    </div>
   </header>
     <!-- MAIN CONTENT -->
   <main>
     <section id="name">
-      <h1>
-        Šrankota
+      <h1">
+        <span>Šrankota</span>
         <span id="name-vert" class="vertical">Filip</span>
       </h1>
     </section>
     <section id="job">
-      <h3>
+      <h3">
         <span id="job-vert" class="vertical">Web</span>
-        &nbsp;Developer
+        <span>&nbsp;Developer</span>
       </h3>
     </section>
     <section id="icons">
@@ -67,15 +86,27 @@
         <svg><use xlink:href="#linkedIn"></use></svg>
       </a>
       <a
-      href="https://github.com/kredenc6"
+        href="https://github.com/kredenc6"
         target="_blank"
         rel="noreferrer noopener"
       >
         <svg><use xlink:href="#github"></use></svg>
       </a>
-      <button id="share-button">test</button>
     </section>
   </main>
+  <footer style="position: absolute; bottom: 0; right: 50%; transform: translateX(50%);">
+    © 2020 All Rights Reserved
+    <div
+      class="fb-like"
+      data-href="https://vibrant-gates-1be236.netlify.com/index.html"
+      data-width=""
+      data-layout="button"
+      data-action="like"
+      data-size="small"
+      data-share="true"
+    >
+    </div>
+  </footer>
 </body>
 <!-- SVG -->
 <svg version="1.1" xlmns="http://www.w3.org/2000/svg" style="display: none">
@@ -93,8 +124,5 @@
   </symbol>
 </svg>
 <!-- SCRIPTS -->
-<script src="main.js"></script>
-<!-- FB SDK -->
-<script src="fbSDK.js"></script>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script type="module" src="main.js"></script>
 </html>

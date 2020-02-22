@@ -17,18 +17,37 @@
   <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktop.css" />
   <!-- ICONS -->
   <link rel="icon" type="image/png" href="../img/favicon.ico">
+  <script>
+    // ***** GOOGLE FORM LOADING *****
+    function hideLoadingMessage() {
+    const iframeNode = document.querySelector("iframe");
+    document.getElementById("loading_message").style.display = "none";
+    iframeNode.style.opacity = "0.7";
+    iframeNode.addEventListener("mouseover", ()=> {
+      event.target.style.opacity = "1";
+    });
+    iframeNode.addEventListener("mouseout", ()=> {
+      event.target.style.opacity = "0.7";
+    });
+  }
+  </script>
 </head>
 <body>
   <!-- HEADERS -->
   <header id="header_desktop">
       <nav>
         <ul>
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="../about/index.html">ABOUT</a></li>
-          <li><a href="./index.html">CONTACT</a></li>
-          <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
+          <li><a href="../index.html"></a></li>
+          <li><a href="../about/index.html"></a></li>
+          <li><a href="./index.html"></a></li>
+          <li><a href="../portfolio/index.html"></a></li>
         </ul>
       </nav>
+      <div class="language">
+        <button class="language_en">en</button>
+        /
+        <button class="language_cz">cz</button>
+      </div>
     </header>
     <header id="header_mobile">
       <div id="menu_icon_container">
@@ -38,34 +57,48 @@
       <!-- MOBILE NAVIGATION -->
       <nav id="mobile_menu">
         <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../about/index.html">ABOUT</a></li>
-            <li><a href="./index.html">CONTACT</a></li>
-            <li><a href="../portfolio/index.html">PORTFOLIO</a></li>
+            <li><a href="../index.html"></a></li>
+            <li><a href="../about/index.html"></a></li>
+            <li><a href="./index.html"></a></li>
+            <li><a href="../portfolio/index.html"></a></li>
         </ul>
       </nav>
+      <div class="language">
+        <button class="language_en">en</button>
+        /
+        <button class="language_cz">cz</button>
+      </div>
   </header>
     <!-- MAIN CONTENT -->
   <main>
     <section id="heading">
       <h1>
-        Get in
-        <span class="yellow"> Touch</span>
+        <span class="heading"></span>
+        <span class="heading yellow"></span>
       </h1>
     </section>
     <section id="introduction">
       <h3>
-        <span class="yellow">Let's</span>
-        start working together...
+        <span class="subheading yellow"></span>
+        <span class="subheading"></span>
       </h3>
     </section>
     <section id="form">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwQd4wuYeCV9EHDobtg7wrkLWjkpgRNuoKsGG6e9NPIlQGpA/viewform?embedded=true"
-        height="900" frameborder="0" marginheight="0" marginwidth="0"  onload="hideLoadingMessage()">
+      <iframe
+        src=""
+        height="900"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        onload="hideLoadingMessage()"
+      >
       </iframe>
     </section>
   </main>
   <span id="loading_message"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>loading google form…</span>
+  <footer>
+    © 2020 All Rights Reserved
+  </footer>
 </body>
 <!-- SVG -->
 <svg version="1.1" xlmns="http://www.w3.org/2000/svg" style="display: none">
@@ -77,5 +110,5 @@
   </symbol>
 </svg>
 <!-- SCRIPTS -->
-<script src="../mainDev.js"></script>
+<script type="module" src="../main.js"></script>
 </html>

@@ -1,12 +1,16 @@
-  window.fbAsyncInit = function() {
-    // console.log("FB initialization started.");
-    FB.init({
-      appId            : '1981051258695498',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v6.0'
+  document.getElementById("login-button").addEventListener("click", () => {
+    FB.login(function(response) {
+      console.log(response);
+      if (response.authResponse) {
+       console.log('Welcome!  Fetching your information.... ');
+       FB.api('/me', function(response) {
+         console.log('Good to see you, ' + response.name + '.');
+       });
+      } else {
+       console.log('User cancelled login or did not fully authorize.');
+      }
     });
-  };
+  });
 
   document.getElementById("share-button").addEventListener("click", () => {
     // FB.ui({
