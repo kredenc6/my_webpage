@@ -13,20 +13,13 @@
   <link rel="stylesheet" href="./css/shared.css">
   <!-- MEDIA QUERIES -->
   <link rel="stylesheet" media="(max-width: 767px)" href="./css/main_mobile.css" />
-  <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktopDev.css" />
+  <link rel="stylesheet" media="(min-width: 768px)" href="./css/main_desktop.css" />
   <!-- ICONS -->
   <link rel="icon" type="image/png" href="./img/favicon.ico">
 </head>
 <body>
   <!-- FB SCRIPT -->
   <div id="fb-root"></div>
-  <script
-    async
-    defer
-    crossorigin="anonymous"
-    src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=1981051258695498"
-  >
-  </script>
   <!-- HEADERS -->
   <header id="header_desktop">
     <nav>
@@ -94,8 +87,8 @@
       </a>
     </section>
   </main>
-  <footer style="position: absolute; bottom: 0; right: 50%; transform: translateX(50%);">
-    © 2020 All Rights Reserved
+  <footer>
+    <span id="footerText"></span>
     <div
       class="fb-like"
       data-href="https://vibrant-gates-1be236.netlify.com/index.html"

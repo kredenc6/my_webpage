@@ -41,3 +41,7 @@ body {
   margin: 0 1rem;
   transition: all .3s;
 }
+
+footer {
+  align-self: flex-end;
+}

@@ -39,7 +39,7 @@ function hideMobileMenu() {
 const language = detectLanguage();
 applyLanguage();
 
-function detectLanguage() {
+export function detectLanguage() {
   if(sessionStorage.getItem("language")) return sessionStorage.getItem("language");
   const language = window.navigator.language;
   if(language.substring(0, 2).toLowerCase() === "cz" ||
@@ -59,6 +59,7 @@ function applyLanguage() {
   const infoNodes = document.getElementsByClassName("info");
   const liveViewTextNodes = document.getElementsByClassName("liveViewText");
   const viewCodeTextNodes = document.getElementsByClassName("viewCodeText");
+  const footerTextNode = document.querySelectorAll("#footerText");
 
   setInnerText(header_desktopAnchorNodes, getLangTextsArr(["shared", "nav"]));
   setInnerText(header_mobileAnchorNodes, getLangTextsArr(["shared", "nav"]));
@@ -67,6 +68,27 @@ function applyLanguage() {
   setInnerText(infoNodes, getLangTextsArr([pageName, "info"]));
   setInnerText(liveViewTextNodes, getLangTextsArr([pageName, "liveViewText"]), true);
   setInnerText(viewCodeTextNodes, getLangTextsArr([pageName, "viewCodeText"]), true);
+  setInnerText(footerTextNode, getLangTextsArr(["shared", "footer"]));
+
+  // style buttons texts
+  const czBttNodes = document.getElementsByClassName("language_cz");
+  const enBttNodes = document.getElementsByClassName("language_en");
+  if(language === "cz") {
+    for(const node of czBttNodes) {
+      node.classList.add("underline");
+    }
+    for(const node of enBttNodes) {
+      node.classList.remove("underline");
+    }
+  }
+  else {
+    for(const node of enBttNodes) {
+      node.classList.add("underline");
+    }
+    for(const node of czBttNodes) {
+      node.classList.remove("underline");
+    }
+  }
 
   /**Each node on index "i" in nodes array receives text from index "i" in langTexts array
    * as innerText. If the optional repeat property is true all items in nodes array receive
@@ -131,11 +153,28 @@ for(const node of czBttNodes) {
   });
 }
 
-// ***** GOOGLE FORM LOADING *****
+// ***** GOOGLE FORM LANGUAGE *****
 const iframeNode = document.querySelector("iframe");
 if(iframeNode) {
   iframeNode.src = language === "cz" ?
-    "https://docs.google.com/forms/d/e/1FAIpQLSeSBKr-xUny3dR-98A8yDFpvGwJ6q6r4dq-jlme1ITeOZmgQg/viewform?embedded=true"
-    :
-    "https://docs.google.com/forms/d/e/1FAIpQLScwQd4wuYeCV9EHDobtg7wrkLWjkpgRNuoKsGG6e9NPIlQGpA/viewform?embedded=true"
+  "https://docs.google.com/forms/d/e/1FAIpQLSeSBKr-xUny3dR-98A8yDFpvGwJ6q6r4dq-jlme1ITeOZmgQg/viewform?embedded=true"
+  :
+  "https://docs.google.com/forms/d/e/1FAIpQLScwQd4wuYeCV9EHDobtg7wrkLWjkpgRNuoKsGG6e9NPIlQGpA/viewform?embedded=true";
 }
+
+
+// ***** FACEBOOK SDK LANGUAGE & SCRIPT *****
+function languageCode() {
+  return language === "cz" ? "cs_CZ" : "en_GB";
+}
+
+function fbScriptHTMLTag() {
+  const scriptNode = document.createElement("script");
+  scriptNode.setAttribute("async", "true");
+  scriptNode.setAttribute("defer", "true");
+  scriptNode.setAttribute("crossorigin", "anonymous");
+  scriptNode.setAttribute("src", `https://connect.facebook.net/${languageCode()}/sdk.js#xfbml=1&version=v6.0&appId=1981051258695498`);
+  return scriptNode;
+}
+
+document.querySelector("body").append(fbScriptHTMLTag());
