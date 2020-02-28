@@ -29,9 +29,9 @@
   margin-top: 3rem;
 }
 
- .project {
-   margin: 0 1rem;
- }
+.project {
+  margin: 0 1rem 2rem;
+}
 
   .project:first-child {
       margin-left: 0;

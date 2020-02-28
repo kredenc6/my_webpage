@@ -60,6 +60,8 @@ function applyLanguage() {
   const liveViewTextNodes = document.getElementsByClassName("liveViewText");
   const viewCodeTextNodes = document.getElementsByClassName("viewCodeText");
   const footerTextNode = document.querySelectorAll("#footerText");
+  const projectNameNodes = document.querySelectorAll(".project h4");
+  const usedTechNodes = document.querySelectorAll(".project h6");
 
   setInnerText(header_desktopAnchorNodes, getLangTextsArr(["shared", "nav"]));
   setInnerText(header_mobileAnchorNodes, getLangTextsArr(["shared", "nav"]));
@@ -69,6 +71,8 @@ function applyLanguage() {
   setInnerText(liveViewTextNodes, getLangTextsArr([pageName, "liveViewText"]), true);
   setInnerText(viewCodeTextNodes, getLangTextsArr([pageName, "viewCodeText"]), true);
   setInnerText(footerTextNode, getLangTextsArr(["shared", "footer"]));
+  setInnerText(projectNameNodes, getLangTextsArr([pageName, "projectNames"]));
+  setInnerText(usedTechNodes, getLangTextsArr([pageName, "usedTechnologies"]), true);
 
   // style buttons texts
   const czBttNodes = document.getElementsByClassName("language_cz");
