@@ -9,7 +9,7 @@ const languages = {
       heading: ["Info about ", "Me"],
       subheading: ["Allow me", " to start by..."],
       info: [
-        "...introducing myself. My name is Filip Šrankota. I'm a self-tought web developer based near Prague. My main focus has mostly been on front-end. Some of my skills are demonstrated on this site and in the portfolio page. They include HTML, CSS, JavaScript and ReactJS.",
+        "...introducing myself. My name is Filip Šrankota. I'm a self-tought web developer based near Prague. My main focus has mostly been on front-end. Some of my skills are demonstrated on this site and in the portfolio page. They include HTML, CSS, JavaScript and ReactJS. Lately these were joined with a little bit of TypeScript, Material-UI and NodeJS.",
         "I'm looking for a job position - junior web developer to start working with a team, keep growing my skills and applying those I've already learned.",
         "If you are interested in working with me or just want more information about my work, I would love to hear from you! You can contact me by filling out the form on the contact page."
       ]
@@ -25,7 +25,7 @@ const languages = {
       subheading: ["Feel free to take ", "a look"],
       liveViewText: ["Live View"],
       viewCodeText: ["View Code"],
-      projectNames: ["Pexeso - memory game", "Simple calculator", "Simple chat-app"],
+      projectNames: ["Pexeso - memory game", "Simple calculator", "Simple chat-app", "Setup wizard"],
       usedTechnologies: ["Used technologies:"]
     }
   },
@@ -40,7 +40,7 @@ const languages = {
       heading: ["Info o ", "mně"],
       subheading: ["Dovolte mi", " se nejdříve..."],
       info: [
-        "...představit. Jmenuji se Filip Šrankota. Jsem sebevzdělaný web developer žijící blízko Prahy. Mé zaměření je prozatím hlavně na front-end. Některé z mých dovedností jsou prezentovány na těchto stránkách a v portfolio záložce. Zahrnují HTML, CSS, JavaScript and ReactJS.",
+        "...představit. Jmenuji se Filip Šrankota. Jsem sebevzdělaný web developer žijící blízko Prahy. Mé zaměření je prozatím hlavně na front-end. Některé z mých dovedností jsou prezentovány na těchto stránkách a v portfolio záložce. Zahrnují HTML, CSS, JavaScript and ReactJS. V poslední době se k tomu přidala troška TypeScriptu, Material-UI a NodeJS.",
         "Hledám zaměstnání na pozici - junior web developer. Rád bych začal pracovat v týmu, dál rozvíjel své dovednosti a uplatňoval ty, které jsem se již naučil.",
         "Pokud máte zájem se mnou navázat spolupráci, nebo byste rád/a více informací o mých projektech, neváhejte mě kontaktovat! Spojit se se mnou můžete vyplněním formuláře v záložce kontakt."
       ]
@@ -56,7 +56,7 @@ const languages = {
       subheading: ["Neváhejte se ", "podívat"],
       liveViewText: ["Živý náhled"],
       viewCodeText: ["Zhlédnout kód"],
-      projectNames: ["Pexeso", "Kalkulačka", "Chatovací appka"],
+      projectNames: ["Pexeso", "Kalkulačka", "Chatovací appka", "Průvodce nastavením"],
       usedTechnologies: ["Použité technologie:"]
     }
   }
