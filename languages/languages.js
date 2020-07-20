@@ -18,6 +18,7 @@ const languages = {
     contact: {
       heading: ["Get in ", "touch"],
       subheading: ["Let's ", "start working together..."],
+      loadingMessage: ["loading google form..."]
     },
 
     portfolio: {
@@ -40,7 +41,7 @@ const languages = {
       heading: ["Info o ", "mně"],
       subheading: ["Dovolte mi", " se nejdříve..."],
       info: [
-        "...představit. Jmenuji se Filip Šrankota. Jsem sebevzdělaný web developer žijící blízko Prahy. Mé zaměření je prozatím hlavně na front-end. Některé z mých dovedností jsou prezentovány na těchto stránkách a v portfolio záložce. Zahrnují HTML, CSS, JavaScript and ReactJS. V poslední době se k tomu přidala troška TypeScriptu, Material-UI a NodeJS.",
+        "...představit. Jmenuji se Filip Šrankota. Jsem sebevzdělaný web developer žijící blízko Prahy. Prozatím se zaměřuji především na front-end technologie. Některé z mých dovedností jsou prezentovány na těchto stránkách a v portfolio záložce. Zahrnují HTML, CSS, JavaScript and ReactJS. V poslední době se k tomu přidala troška TypeScriptu, Material-UI a NodeJS.",
         "Hledám zaměstnání na pozici - junior web developer. Rád bych začal pracovat v týmu, dál rozvíjel své dovednosti a uplatňoval ty, které jsem se již naučil.",
         "Pokud máte zájem se mnou navázat spolupráci, nebo byste rád/a více informací o mých projektech, neváhejte mě kontaktovat! Spojit se se mnou můžete vyplněním formuláře v záložce kontakt."
       ]
@@ -49,6 +50,7 @@ const languages = {
     contact: {
       heading: ["Kontaktujte ", "mě"],
       subheading: ["Pusťme ", "se do práce..."],
+      loadingMessage: ["načítám google formulář..."]
     },
 
     portfolio: {

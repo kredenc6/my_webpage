@@ -20,16 +20,16 @@
   <script>
     // ***** GOOGLE FORM LOADING *****
     function hideLoadingMessage() {
-    const iframeNode = document.querySelector("iframe");
-    document.getElementById("loading_message").style.display = "none";
-    iframeNode.style.opacity = "0.7";
-    iframeNode.addEventListener("mouseover", ()=> {
-      event.target.style.opacity = "1";
-    });
-    iframeNode.addEventListener("mouseout", ()=> {
-      event.target.style.opacity = "0.7";
-    });
-  }
+      const iframeNode = document.querySelector("iframe");
+      document.getElementById("loading_message").style.display = "none";
+      iframeNode.style.opacity = "0.7";
+      iframeNode.addEventListener("mouseover", ()=> {
+        event.target.style.opacity = "1";
+      });
+      iframeNode.addEventListener("mouseout", ()=> {
+        event.target.style.opacity = "0.7";
+      });
+    }
   </script>
 </head>
 <body>
@@ -95,7 +95,7 @@
       </iframe>
     </section>
   </main>
-  <span id="loading_message"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>loading google form…</span>
+  <span id="loading_message"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><span id="loadingMessage">loading google form...</span></span>
   <footer>
     <span id="footerText"></span>
   </footer>
