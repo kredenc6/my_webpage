@@ -26,7 +26,7 @@ const languages = {
       subheading: ["Feel free to take ", "a look"],
       liveViewText: ["Live View"],
       viewCodeText: ["View Code"],
-      projectNames: ["Pexeso - memory game", "Simple calculator", "Simple chat-app", "Setup wizard", "Metacules", "Typing practice"],
+      projectNames: ["Metacules", "Typing practice", "Simple chat-app", "Setup wizard", "Pexeso - memory game", "Simple calculator"],
       usedTechnologies: ["Used technologies:"]
     }
   },
@@ -58,7 +58,7 @@ const languages = {
       subheading: ["Neváhejte se ", "podívat"],
       liveViewText: ["Živý náhled"],
       viewCodeText: ["Zhlédnout kód"],
-      projectNames: ["Pexeso", "Kalkulačka", "Chatovací appka", "Průvodce nastavením", "Metacules", "Psaní všemi deseti"],
+      projectNames: ["Metacules", "Psaní všemi deseti", "Chatovací appka", "Průvodce nastavením", "Pexeso", "Kalkulačka"],
       usedTechnologies: ["Použité technologie:"]
     }
   }
