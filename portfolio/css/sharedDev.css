@@ -54,6 +54,7 @@ footer {
 }
 
 .project {
+  position: relative;
   max-width: 40rem;
   min-width: 15.5rem;
   width: 28%;
@@ -76,6 +77,13 @@ footer {
     justify-content: center;
     align-items: flex-start;
   }
+
+.project_note {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.9rem;
+}
 
 .live_version,
 .view_code {
@@ -116,10 +124,12 @@ footer {
 }
 
 .disabled{
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(180, 180, 180);
+  color: rgb(220, 220, 220);
 }
 
   .disabled:hover{
     cursor: default;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(180, 180, 180);
+    color: rgb(220, 220, 220);
   }
