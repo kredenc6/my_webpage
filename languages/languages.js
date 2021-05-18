@@ -27,7 +27,8 @@ const languages = {
       liveViewText: ["Live View"],
       viewCodeText: ["View Code"],
       projectNames: ["Metacules", "Typing practice", "Simple chat-app", "Setup wizard", "Pexeso - memory game", "Simple calculator"],
-      usedTechnologies: ["Used technologies:"]
+      usedTechnologies: ["Used technologies:"],
+      metaculesNote: ["*3 month cooperation"]
     }
   },
 
@@ -59,7 +60,8 @@ const languages = {
       liveViewText: ["Živý náhled"],
       viewCodeText: ["Zhlédnout kód"],
       projectNames: ["Metacules", "Psaní všemi deseti", "Chatovací appka", "Průvodce nastavením", "Pexeso", "Kalkulačka"],
-      usedTechnologies: ["Použité technologie:"]
+      usedTechnologies: ["Použité technologie:"],
+      metaculesNote: ["*3 měsíční spolupráce"]
     }
   }
 };

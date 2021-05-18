@@ -63,6 +63,7 @@ function applyLanguage() {
   const projectNameNodes = document.querySelectorAll(".project h4");
   const usedTechNodes = document.querySelectorAll(".project h6");
   const loadingMessageNode = document.querySelectorAll("#loadingMessage");
+  const metaculesNote = document.querySelectorAll("#metacules_note");
 
   setInnerText(header_desktopAnchorNodes, getLangTextsArr(["shared", "nav"]));
   setInnerText(header_mobileAnchorNodes, getLangTextsArr(["shared", "nav"]));
@@ -75,6 +76,7 @@ function applyLanguage() {
   setInnerText(projectNameNodes, getLangTextsArr([pageName, "projectNames"]));
   setInnerText(usedTechNodes, getLangTextsArr([pageName, "usedTechnologies"]), true);
   setInnerText(loadingMessageNode, getLangTextsArr([pageName, "loadingMessage"]));
+  setInnerText(metaculesNote, getLangTextsArr([pageName, "metaculesNote"]));
 
   // style buttons texts
   const czBttNodes = document.getElementsByClassName("language_cz");
