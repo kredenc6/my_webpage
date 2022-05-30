@@ -2,7 +2,7 @@ const languages = {
   en: {
     shared: {
       nav: ["home", "about", "contact", "portfolio"],
-      footer: ["© 2021 All Rights Reserved"]
+      footer: [`© ${new Date().getFullYear()} All Rights Reserved`]
     },
 
     about: {
@@ -35,7 +35,7 @@ const languages = {
   cz: {
     shared: {
       nav: ["domů", "o mně", "kontakt", "portfolio"],
-      footer: ["© 2021 Všechna práva vyhrazena"]
+      footer: [`© ${new Date().getFullYear()} Všechna práva vyhrazena`]
     },
 
     about: {
